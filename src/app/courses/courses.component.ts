@@ -50,7 +50,7 @@ export class CoursesComponent implements OnInit {
   }
 
   saveCourse(course) {
-    if(course.id) {
+    if (course.id) {
       this.coursesService.update(course)
         .subscribe(result => this.refreshCourses());
     } else {
